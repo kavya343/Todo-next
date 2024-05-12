@@ -14,7 +14,7 @@ const Home: React.FunctionComponent = () => {
   }
 
   const markTodoDone = (id: string) => {
-    setTodos(todos.map(todo => todo.id === id ? { ...todo, !todo.done } : todo)); 
+    setTodos(todos.map(todo => todo.id === id ? { ...todo, done: !todo.done } : todo)); 
   }
 
   return (
